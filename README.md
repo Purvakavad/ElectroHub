@@ -6,7 +6,6 @@ A modern and responsive e-commerce website built using HTML, CSS, and JavaScript
 
 https://Purvakavad.github.io/ElectroHub/
 
-
 ## Features
 
 * Responsive Design
@@ -33,33 +32,32 @@ ElectroHub/
 ├── cart.html
 ├── about.html
 ├── contact.html
-├── cart.html
 ├── login.html
 ├── regsiter.html
 ├── order_success.html
 │
 ├── css/
-│   └── style.css
-    └── responsive.css
-    └── home.css
-    └── about.css
-    └── category.css
-    └── contact.css
-    └── cart.css
-    └── form.css
-    └── oredr-success.css
+│ ├── style.css
+│ ├── responsive.css
+│ ├── home.css
+│ ├── about.css
+│ ├── category.css
+│ ├── contact.css
+│ ├── cart.css
+│ ├── form.css
+│ └── order-success.css
 │
 ├── js/
-│   └── script.js
-    └── cart.js
-    └── addtocart.js
-    └── category.js
-    └── form.js
-    └── loadcomponent.js
+│ ├── script.js
+│ ├── cart.js
+│ ├── addtocart.js
+│ ├── category.js
+│ ├── form.js
+│ └── loadcomponent.js
 │
 ├── components/
-    └── header.html
-    └── footer.html
+│ ├── header.html
+│ └── footer.html
 │
 ├── images/
 │
@@ -79,6 +77,12 @@ ElectroHub/
 ### Mobile View
 
 ![Mobile View](screenshots/mobileview.png)
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScrip
 
 ## Future Improvements
 

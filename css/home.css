@@ -10,7 +10,7 @@
     width: 100vw;
     margin-top: 5vh;
     position: relative;
-    background-image: url('../images/heroimage.png');
+    background-image: url('images/heroimage.png');
     background-size: cover;
     background-repeat: no-repeat;
 
