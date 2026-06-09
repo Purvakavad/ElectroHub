@@ -78,7 +78,7 @@
         margin-top: 10vh;
         padding: 30px 20px;
         background-position: center;
-        background-image: url('images/mobileheroim.png');
+        background-image: url('../images/mobileheroim.png');
 
     }
 
@@ -288,7 +288,7 @@
         margin-top: 10vh;
         padding: 30px 20px;
         background-position: center;
-        background-image: url('images/tablets.jpg');
+        background-image: url('../images/tablets.jpg');
 
     }
 
