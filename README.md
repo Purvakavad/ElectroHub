@@ -6,6 +6,7 @@ A modern and responsive e-commerce website built using HTML, CSS, and JavaScript
 
 https://Purvakavad.github.io/ElectroHub/
 
+
 ## Features
 
 * Responsive Design
