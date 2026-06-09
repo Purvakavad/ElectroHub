@@ -37,7 +37,6 @@
 
     .login-btn,
     .cart-btn {
-        /* gap: 5px; */
         margin-right: 15px;
     }
 
@@ -79,10 +78,8 @@
         margin-top: 10vh;
         padding: 30px 20px;
         background-position: center;
-        background-image: url('/images/mobileheroim.png');
-        /* background-size: contain; */
-        /* background-size: contain; */
-        /* background-position: center bottom; */
+        background-image: url('../images/mobileheroim.png');
+
     }
 
     .hero-content {
@@ -123,26 +120,13 @@
     }
 
     .column {
-        /* gap: 2px; */
         grid-template-columns: repeat(1, 1fr);
     }
 
     .feature-icon {
         padding: 10px;
+
     }
-
-    /* .feature {
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 20px;
-        align-items: center;
-    }
-
-    .column {
-        width: 100%;
-        justify-content: center;
-    } */
-
 
     .all-category-cards {
         display: grid;
@@ -191,20 +175,14 @@
 
     }
 
-
-
     .category-all-cards {
         grid-template-columns: repeat(1, 1fr);
     }
 
-
-
     .sidebar {
         position: fixed;
         top: 70px;
-        /* navbar height પ્રમાણે */
         left: -250px;
-        /* screen બહાર */
         width: 250px;
         height: calc(100vh - 70px);
         background: white;
@@ -213,7 +191,7 @@
     }
 
     .sidebar.active {
-        /* display: block; */
+
         left: 0;
 
     }
@@ -244,7 +222,7 @@
         background-size: contain;
     }
 
-    /* //about page  */
+    /* about page  */
 
     .story-section {
         flex-direction: column;
@@ -310,10 +288,8 @@
         margin-top: 10vh;
         padding: 30px 20px;
         background-position: center;
-        background-image: url('/images/tablets.jpg');
-        /* background-size: contain; */
-        /* background-size: contain; */
-        /* background-position: center bottom; */
+        background-image: url('../images/tablets.jpg');
+
     }
 
 
@@ -398,9 +374,7 @@
     .sidebar {
         position: fixed;
         top: 10vh;
-        /* navbar height પ્રમાણે */
         left: -250px;
-        /* screen બહાર */
         width: 250px;
         height: calc(100vh - 70px);
         background: white;
@@ -409,7 +383,6 @@
     }
 
     .sidebar.active {
-        /* display: block; */
         left: 0;
     }
 

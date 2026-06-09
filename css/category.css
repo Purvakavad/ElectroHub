@@ -113,7 +113,6 @@ main {
 
 
 .product-card .card-img {
-    /* background: linear-gradient(135deg, #eff6ff, #dbeafe); */
     width: 100%;
     height: 400px;
     object-fit: cover;
