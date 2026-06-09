@@ -1,0 +1,120 @@
+    body {
+        font-family: Arial, sans-serif;
+        background: #f1f3f6;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    .cart {
+        margin-top: 14vh;
+
+    }
+
+    .title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .cartContainer {
+        max-width: 900px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Product Card */
+    .cart-item {
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Left side */
+    .left {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .left img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .details {
+        width: 20vw;
+    }
+
+    .details h3 {
+        margin: 0;
+    }
+
+    .price {
+        color: green;
+        font-weight: bold;
+    }
+
+    /* Quantity buttons */
+    .qtyBox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .qtyBox button {
+        padding: 5px 10px;
+        border: none;
+        background: #2563eb;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .removeBtn {
+        background: red;
+        color: white;
+        border: none;
+        padding: 6px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Bottom summary */
+    .cartSummary {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .checkoutBtn {
+        background: green;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .footer {
+        /* width: 100%; */
+        margin-top: auto;
+    }

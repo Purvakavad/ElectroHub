@@ -1,0 +1,437 @@
+@media screen and (max-width:768px) {
+    .logo {
+        margin: 0 5px;
+        font-size: 0.9rem;
+        letter-spacing: 0;
+    }
+
+    .search-input {
+        width: 0;
+        padding: 10px 0;
+        border: none;
+        opacity: 0;
+        transition: all .3s ease;
+    }
+
+    .search-input.active {
+        width: 100px;
+        padding: 10px 10px 10px 8px;
+        border: 2px solid #ddd;
+        opacity: 1;
+    }
+
+    .search-icon {
+        right: 8px;
+
+    }
+
+
+    .nav-actions {
+        gap: 2px;
+    }
+
+    .login-btn span {
+        display: none;
+    }
+
+
+    .login-btn,
+    .cart-btn {
+        /* gap: 5px; */
+        margin-right: 15px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 10vh;
+        left: 50%;
+        transform: translateX(-50%) translateY(-20px);
+        opacity: 0;
+        width: 100%;
+        transition: all 0.4s ease;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        pointer-events: none;
+
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+        pointer-events: auto;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 1.6rem;
+    }
+
+
+    .hero {
+        height: auto;
+        width: 100%;
+        margin-top: 10vh;
+        padding: 30px 20px;
+        background-position: center;
+        background-image: url('/images/mobileheroim.png');
+        /* background-size: contain; */
+        /* background-size: contain; */
+        /* background-position: center bottom; */
+    }
+
+    .hero-content {
+        position: static;
+        transform: none;
+        text-align: center;
+        line-height: normal;
+    }
+
+    .hero-headeing h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .content {
+        font-size: 0.95rem;
+        line-height: 24px;
+    }
+
+    .hero-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-btn .btn1,
+    .hero-btn .btn2 {
+        width: 100%;
+        max-width: 250px;
+        font-size: 1rem;
+    }
+
+    .feature {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .column {
+        /* gap: 2px; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature-icon {
+        padding: 10px;
+    }
+
+    /* .feature {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .column {
+        width: 100%;
+        justify-content: center;
+    } */
+
+
+    .all-category-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .category-card .card-img {
+        height: 300px;
+    }
+
+    .featured-title {
+        font-size: 2rem;
+    }
+
+    .all-featured-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .featured-img {
+        height: 250px;
+    }
+
+    .all-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        font-size: 1.1em;
+    }
+
+    .card i {
+        margin-bottom: 15px;
+    }
+
+    .columns {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.1em;
+    }
+
+    .footer-bottom {
+        font-size: 0.7em;
+    }
+
+    .social-links a {
+        font-size: 1.2em;
+
+    }
+
+
+
+    .category-all-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+    .sidebar {
+        position: fixed;
+        top: 70px;
+        /* navbar height પ્રમાણે */
+        left: -250px;
+        /* screen બહાર */
+        width: 250px;
+        height: calc(100vh - 70px);
+        background: white;
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+
+    .sidebar.active {
+        /* display: block; */
+        left: 0;
+
+    }
+
+    #closeSidebar {
+        display: block;
+        font-size: 22px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .side-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #filterBtn {
+        display: block;
+        cursor: pointer;
+        font-size: 1.2em;
+        padding: auto;
+        padding-top: 5px;
+    }
+
+    .product-card .card-img {
+        height: 300px;
+        background-size: contain;
+    }
+
+    /* //about page  */
+
+    .story-section {
+        flex-direction: column;
+    }
+
+    .mission-container,
+    .values-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .login-card,
+    .register-card {
+        width: 75vw;
+
+    }
+
+
+}
+
+
+@media(max-width:480px) {
+
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+
+    .mission-container,
+    .values-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+    .logo {
+        font-size: 1.2rem;
+        letter-spacing: 0;
+        margin-right: 15px;
+    }
+
+    .search-input {
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .nav-links {
+        gap: 10px
+    }
+
+    .nav-actions {
+        gap: 10px
+    }
+
+    .hero {
+        height: auto;
+        width: 100%;
+        margin-top: 10vh;
+        padding: 30px 20px;
+        background-position: center;
+        background-image: url('/images/tablets.jpg');
+        /* background-size: contain; */
+        /* background-size: contain; */
+        /* background-position: center bottom; */
+    }
+
+
+    .hero-content {
+        position: static;
+        transform: none;
+        text-align: center;
+        line-height: normal;
+    }
+
+    .hero-headeing h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    .content {
+        font-size: 1.2rem;
+        line-height: 30px;
+        color: #4b5563;
+    }
+
+    .hero-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-btn .btn1,
+    .hero-btn .btn2 {
+        width: 100%;
+        max-width: 250px;
+        font-size: 1rem;
+    }
+
+    .feature {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .column {
+        /* gap: 2px; */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-icon {
+        padding: 10px;
+    }
+
+    .all-category-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .category-card .card-img {
+        height: 350px;
+    }
+
+    .all-featured-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .category-all-cards {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .product-card {
+        margin-bottom: 10px;
+    }
+
+    .category-all-cards .card-img {
+        height: 350px;
+    }
+
+    .login-card,
+    .register-card {
+        width: 65vw;
+
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 10vh;
+        /* navbar height પ્રમાણે */
+        left: -250px;
+        /* screen બહાર */
+        width: 250px;
+        height: calc(100vh - 70px);
+        background: white;
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+
+    .sidebar.active {
+        /* display: block; */
+        left: 0;
+    }
+
+    #closeSidebar {
+        display: block;
+        font-size: 22px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .side-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #filterBtn {
+        display: block;
+        cursor: pointer;
+        font-size: 1.2em;
+        padding: auto;
+        padding-top: 5px;
+    }
+
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroHub</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div id="header"></div>
+    
+    <main>
+        <div class="category-page">
+    <div class="sidebar">
+        <div class="side-header">
+            <h4>Shop by Category</h4>
+            <i class="fa-solid fa-xmark" id="closeSidebar"></i>
+        </div>
+        <div class="category active" data-category="all">
+            <a  class="category-link">All Products</a>
+            <i class="fa-solid fa-angle-right rightIcon"></i>
+        </div>
+        <div class="category" data-category="smartphones">
+            <a class="category-link">Smartphones </a>
+            <i class="fa-solid fa-angle-right rightIcon"></i>
+        </div>
+        <div class="category" data-category="leptop"><a class="category-link"  >Laptops </a><i class="fa-solid fa-angle-right rightIcon"></i></div>
+        <div class="category" data-category="smartwatch"><a class="category-link" >Smart Watch </a><i class="fa-solid fa-angle-right rightIcon"></i></div>
+        <div class="category" data-category="gamimg"><a class="category-link" >Gaming </a><i class="fa-solid fa-angle-right rightIcon"></i></div>
+        <div class="category" data-category="camera"><a class="category-link" >Cameras </a><i class="fa-solid fa-angle-right rightIcon"></i></div>
+        <div class="category" data-category="headphone"><a class="category-link" >Headphones</a><i class="fa-solid fa-angle-right rightIcon"></i></div>
+    </div>
+    <div class="main-cantainer">
+    <div class="product-header">
+            <h2>All Products</h2>
+            <i class="fa-solid fa-filter" id="filterBtn"></i>
+    </div>
+    <div class="category-all-cards">
+        
+        <div class="product-card" data-category="smartphones" data-name="Apple iPhone 17 Pro">
+            <img class="card-img" src="/images/iPhone-17-Pro.jpg" alt="">
+            
+            <div class="category-contents">
+            <h3>Apple iPhone 17 Pro</h3>
+            <p class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                (4.2)
+            </p>
+            <p>price: <span class="price">₹1,19,900</span></p>
+            <button class="addtocartBtn" onClick="addToCart('images/iPhone-17-Pro.jpg',' iPhone 17 Pro',119900)">Add to Cart</button>
+        </div>
+        </div>
+        
+        <div class="product-card" data-category="smartphones"  data-name="Samsung Galaxy S25">
+            <img class="card-img" src="/images/Samsung Galaxy S25.webp">
+            <div class="category-contents">
+                <h3>Samsung Galaxy S25</h3>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (4.3)
+                </p>
+                <p>price: <span class="price">₹89,999</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/Samsung-Galaxy-S25.jpg','Samsung Galaxy S25',89999)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="leptop" data-name="MacBook Air M4">
+            <img class="card-img" src="/images/MacBook-Air.jpg">
+            <div class="category-contents">
+                <h3>MacBook Air M4</h3>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (4.9)
+                </p>
+                <p>price: <span class="price">₹99,900</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/MacBook-Air.jpg','MacBook Air M4',99900)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="leptop" data-name="Apple MacBook Pro">
+            <img class="card-img" src="/images/Apple MacBook Pro.png">
+            <div class="category-contents">
+                <h3>Apple MacBook Pro</h3>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (4.5)
+                </p>
+                <p>price: <span class="price">₹85,900</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/Apple-MacBook-Pro-.webp','Apple MacBook Pro',85900)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="smartwatch" data-name="Apple Watch Series 10">
+            <img class="card-img" src="/images/Apple-Watch.jpg">
+            <div class="category-contents">
+                <h3>Apple Watch Series 10</h3>
+                        <p class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            (4.5)
+                        </p>
+                        <p>price: <span class="price">₹44,900</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/Apple-Watch.jpg','Apple Smart Watch',44900)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-category="smartphones" data-name="Apple iPhone 16 Pro">
+            <img class="card-img" src="/images/Apple-iPhone-16-Pro.png" alt="">
+                <div class="category-contents">
+                <h3>Apple iPhone 16 Pro</h3>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (3.5)
+                </p>
+                <p>price: <span class="price">₹98,900</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/Apple-iPhone-16-Pro.png','iphone 16 pro',98900)" addToCart('iphone 16 pro',98900)>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-category="smartwatch" data-name="Titn Smart Watch">
+            <img class="card-img" src="/images/Titn Smart Watch.png">
+            <div class="category-contents">
+                <h3>Titn Smart Watch</h3>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (4.9)
+                </p>
+                <p>price: <span class="price">₹33,599</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/smart-watch2.avif','Titn Smart Watch',33599)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-category="leptop" data-name="HP Leptop">
+            <img class="card-img" src="/images/hpleptop.jpg">
+            <div class="category-contents">
+                <h3>HP Leptop</h3>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (4.7)
+                </p>
+                <p>price: <span class="price">₹48,500</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/hpleptop.jpg','HP Leptop',48500)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-category="leptop" data-name="Dell Leptop">
+            <img class="card-img" src="/images/dell-leptop.png">
+            <div class="category-contents">
+                <h3>Dell Leptop</h3>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (4.4)
+                </p>
+                <p>price: <span class="price">₹56,900</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/dell-leptop.png','Dell Leptop',56900)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-category="gamimg" data-name="Smart Gaming Device">
+            <img class="card-img" src="/images/Smart Gaming Device.avif" alt="">
+            <div class="category-contents">
+                <h3>Smart Gaming Device</h3>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (4.2)
+                </p>
+                <p>price: <span class="price">₹22,499</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/handheld-gaming-device.avif','Smart Gaming Device',22499)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-category="camera" data-name="Hd Camera">
+                <img class="card-img" src="/images/camera.jpg" alt="">
+                <div class="category-contents">
+                <h3>Hd Camera</h3>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (3.3)
+                </p>
+                <p>price: <span class="price">₹58,900</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/camera.jpg','Hd Camera',58900)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-category="headphone" data-name="Prosound Wired Headphones">
+                <img class="card-img" src="/images/prosound-wired-headphones.avif" alt="">
+                <div class="category-contents">
+                <h3>Prosound Wired Headphones</h3>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (4.9)
+                </p>
+                <p>price: <span class="price">₹25,900</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/prosound-wired-headphones.avif','Prosound Wired Headphones',25900)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-category="headphone" data-name="Apple AirPods">
+            <img class="card-img" src="/images/AirPods.jpg">
+            <div class="category-contents">
+                <h3>Apple AirPods</h3>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (3.3)
+                </p>
+                <p>price: <span class="price">₹24,900</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/AirPods.jpg','Apple AirPods',24900)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="camera" data-name="Sony Alpha A7 IV Camera">
+            <img class="card-img" src="/images/Sony-Alpha-A7-IV-Camera.jpg">
+            <div class="category-contents">
+                <h3>Sony Alpha A7 IV Camera</h3>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (4.7)
+                </p>
+                <p>price: <span class="price">₹1,79,990</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/Sony-Alpha-A7-IV-Camera.jpg','Sony Alpha A7 IV Camera',179990)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-category="camera" data-name="Canon-EOS-R50Canon-EOS-R50">
+            <img class="card-img" src="/images/Canon-EOS-R50.jpg">
+            <div class="category-contents">
+                <h3>Canon-EOS-R50Canon-EOS-R50</h3>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (4.1)
+                </p>
+                <p>price: <span class="price">₹65,990</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/Canon-EOS-R50.jpg','Canon-EOS-R50',65990)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="headphone" data-name="Sony WH-1000XM5">
+            <img class="card-img" src="/images/Sony-WH-1000XM5.webp">
+            <div class="category-contents">
+                <h3>Sony WH-1000XM5</h3>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (3.7)
+                </p>
+                <p>price: <span class="price">₹29,900</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/Sony-WH-1000XM5.webp','Sony WH-1000XM5',29900)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card" data-category="gamimg" data-name="Steam-Deck-Oled">
+            <img class="card-img" src="/images/Steam-Deck-Oled-watch.webp">
+            <div class="category-contents">
+                <h3>Steam-Deck-Oled</h3>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    (4.7)
+                </p>
+                <p>price: <span class="price">₹45000</span></p>
+                <button class="addtocartBtn" onClick="addToCart('images/Steam-Deck-Oled-watch.webp','Steam-Deck-Oled',45000)">Add to Cart</button>
+            </div>
+        </div>
+        
+            <div class="product-card" data-category="smartwatch" data-name="Realme-Watch-S2">
+                <img class="card-img" src="/images/Realme-Watch-S2.jpg">
+                <div class="category-contents">
+                    <h3>Realme-Watch-S2</h3>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        (4.7)
+                    </p>
+                    <p>price: <span class="price">₹56,999</span></p>
+                    <button class="addtocartBtn" onClick="addToCart('images/Realme-Watch-S2.jpg','Realme-Watch-S2',56999)">Add to Cart</button>
+                </div>
+            </div>
+            
+    </div>
+    </div>
+    </div>
+    </main>
+
+    <div id="footer"></div>
+    <script src="js/script.js"></script>
+    <script src="js/category.js"></script>
+    <script src="js/addtocart.js"></script>
+</body>
+</html>
