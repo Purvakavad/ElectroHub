@@ -69,15 +69,15 @@ ElectroHub/
 
 ### Home Page
 
-![Home Page](screenshots/homepage.png.png)
+![Home Page](screenshots/homepage.png)
 
 ### Categories Page
 
-![Categories Page](screenshots/categprypage.png.png)
+![Categories Page](screenshots/categprypage.png)
 
 ### Mobile View
 
-![Mobile View](screenshots/mobileview.png.png)
+![Mobile View](screenshots/mobileview.png)
 
 ## Future Improvements
 
