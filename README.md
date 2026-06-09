@@ -25,6 +25,7 @@ https://Purvakavad.github.io/ElectroHub/
 
 ## Project Structure
 
+```txt
 ElectroHub/
 │
 ├── index.html
@@ -62,7 +63,7 @@ ElectroHub/
 ├── images/
 │
 └── README.md
-
+```
 
 ## Screenshots
 
